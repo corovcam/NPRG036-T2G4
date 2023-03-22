@@ -1,0 +1,482 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
+  "@type": "TableGroup",
+  "@id": "http://mff.cuni.cz/NPRG036-T2G4/csv-metadata.json",
+  "tables": [
+    {
+      "@type": "Table",
+      "url": "data-1.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/libraries.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/library/{+id}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "id",
+            "titles": "id",
+            "dc:description": "Public library ID",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://schema.org/Library"
+          },
+          {
+            "@type": "Column",
+            "name": "name",
+            "titles": "name",
+            "dc:description": "The official name of the library.",
+            "required": true,
+            "datatype": "string",
+            "lang": "en",
+            "propertyUrl": "http://schema.org/name"
+          },
+          {
+            "@type": "Column",
+            "name": "url",
+            "titles": "url",
+            "dc:description": "The URL of the library.",
+            "required": true,
+            "datatype": "anyURI",
+            "propertyUrl": "http://schema.org/url"
+          },
+          {
+            "@type": "Column",
+            "name": "email",
+            "titles": "email",
+            "dc:description": "The e-mail of the library.",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/email",
+            "valueUrl": "mailto:{+email}"
+          }
+        ],
+        "primaryKey": "id"
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-2.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/books.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/book/{+isbn}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "isbn",
+            "titles": "isbn",
+            "required": true,
+            "propertyUrl": "http://schema.org/isbn",
+            "datatype": "string",
+            "lang": "en"
+          },
+          {
+            "@type": "Column",
+            "name": "name",
+            "titles": "name",
+            "required": true,
+            "propertyUrl": "http://schema.org/name",
+            "datatype": "string",
+            "lang": "en"
+          },
+          {
+            "@type": "Column",
+            "name": "genre",
+            "titles": "genre",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/genre",
+            "valueUrl": "http://mff.cuni.cz/NPRG036-T2G4/literary-genre/{+genre}"
+          },
+          {
+            "@type": "Column",
+            "name": "language",
+            "titles": "language",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/inLanguage",
+            "valueUrl": "http://mff.cuni.cz/NPRG036-T2G4/language/{+language}"
+          },
+          {
+            "@type": "Column",
+            "name": "translationOfWork",
+            "titles": "translationOfWork",
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/translationOfWork",
+            "valueUrl": "http://mff.cuni.cz/NPRG036-T2G4/book/{+translationOfWork}"
+          },
+          {
+            "@type": "Column",
+            "virtual": true,
+            "valueUrl": "http://schema.org/Book",
+            "propertyUrl": "rdf:type"
+          }
+        ],
+        "primaryKey": "isbn"
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-3.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/offers.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/lease-offer/{+id}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "id",
+            "titles": "id",
+            "datatype": "string",
+            "valueUrl": "http://schema.org/OfferForLease",
+            "propertyUrl": "rdf:type"
+          },
+          {
+            "@type": "Column",
+            "name": "library",
+            "titles": "library",
+            "datatype": "string",
+            "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/library/{+library}",
+            "valueUrl": "http://mff.cuni.cz/NPRG036-T2G4/lease-offer/{+id}",
+            "propertyUrl": "http://schema.org/makesOffer"
+          },
+          {
+            "@type": "Column",
+            "name": "isbn",
+            "titles": "isbn",
+            "datatype": "string",
+            "valueUrl": "http://mff.cuni.cz/NPRG036-T2G4/book/{+isbn}",
+            "propertyUrl": "http://schema.org/itemOffered"
+          },
+          {
+            "@type": "Column",
+            "name": "availabilityStarts",
+            "titles": "availabilityStarts",
+            "datatype": "date",
+            "propertyUrl": "http://schema.org/availabilityStarts"
+          },
+          {
+            "@type": "Column",
+            "name": "availabilityEnds",
+            "titles": "availabilityEnds",
+            "datatype": "date",
+            "propertyUrl": "http://schema.org/availabilityEnds"
+          },
+          {
+            "@type": "Column",
+            "name": "availability",
+            "titles": "availability",
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/availability",
+            "valueUrl": "http://schema.org/{+availability}"
+          },
+          {
+            "@type": "Column",
+            "name": "sku",
+            "titles": "sku",
+            "datatype": "string",
+            "lang": "en",
+            "propertyUrl": "http://schema.org/sku"
+          }
+        ],
+        "primaryKey": "id",
+        "foreignKeys": [
+          {
+            "columnReference": "library",
+            "reference": {
+              "resource": "data-1.csv",
+              "columnReference": "id"
+            }
+          },
+          {
+            "columnReference": "isbn",
+            "reference": {
+              "resource": "data-2.csv",
+              "columnReference": "isbn"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-4.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/hasAuthor.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/book/{+isbn}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "author",
+            "titles": "author",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/author",
+            "valueUrl": "http://mff.cuni.cz/NPRG036-T2G4/author/{+author}"
+          },
+          {
+            "@type": "Column",
+            "name": "isbn",
+            "titles": "isbn",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://schema.org/Book"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "columnReference": "author",
+            "reference": {
+              "resource": "data-6.csv",
+              "columnReference": "id"
+            }
+          },
+          {
+            "columnReference": "isbn",
+            "reference": {
+              "resource": "data-2.csv",
+              "columnReference": "isbn"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-5.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/knowsLanguage.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/author/{+author}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "author",
+            "titles": "author",
+            "required": true,
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://schema.org/Person"
+          },
+          {
+            "@type": "Column",
+            "name": "knowsLanguage",
+            "titles": "knowsLanguage",
+            "required": true,
+            "propertyUrl": "http://schema.org/knowsLanguage",
+            "valueUrl": "http://mff.cuni.cz/NPRG036-T2G4/language/{+knowsLanguage}"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "columnReference": "author",
+            "reference": {
+              "resource": "data-6.csv",
+              "columnReference": "id"
+            }
+          },
+          {
+            "columnReference": "knowsLanguage",
+            "reference": {
+              "resource": "data-10.csv",
+              "columnReference": "alternateName"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-6.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/author.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/author/{+id}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "id",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://schema.org/Person"
+          },
+          {
+            "@type": "Column",
+            "name": "familyName",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/familyName",
+            "lang": "en"
+          },
+          {
+            "@type": "Column",
+            "name": "birthDate",
+            "required": true,
+            "datatype": "date",
+            "propertyUrl": "http://schema.org/birthDate"
+          }
+        ],
+        "primaryKey": "id"
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-7.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/given-names.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/author/{+id}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "id",
+            "required": true,
+            "propertyUrl": "rdf:type",
+            "datatype": "string",
+            "valueUrl": "http://schema.org/Person"
+          },
+          {
+            "@type": "Column",
+            "name": "givenName",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/givenName",
+            "lang": "en"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "columnReference": "id",
+            "reference": {
+              "resource": "data-6.csv",
+              "columnReference": "id"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-8.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/keywords.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/book/{+isbn}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "isbn",
+            "required": true,
+            "propertyUrl": "rdf:type",
+            "datatype": "string",
+            "valueUrl": "http://schema.org/Book"
+          },
+          {
+            "@type": "Column",
+            "name": "keywords",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/keywords",
+            "lang": "en"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "columnReference": "isbn",
+            "reference": {
+              "resource": "data-2.csv",
+              "columnReference": "isbn"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-9.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/genres.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/literary-genre/{+id}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "id",
+            "required": true,
+            "propertyUrl": "rdf:type",
+            "datatype": "string",
+            "valueUrl": "http://dbpedia.org/ontology/LiteraryGenre"
+          },
+          {
+            "@type": "Column",
+            "name": "label",
+            "required": true,
+            "propertyUrl": "rdfs:label",
+            "datatype": "string",
+            "lang": "en"
+          },
+          {
+            "@type": "Column",
+            "name": "comment",
+            "required": true,
+            "propertyUrl": "rdfs:comment",
+            "datatype": "string",
+            "lang": "en"
+          }
+        ],
+        "primaryKey": "id"
+      }
+    },
+    {
+      "@type": "Table",
+      "url": "data-10.csv",
+      "@id": "http://mff.cuni.cz/NPRG036-T2G4/languages.csv-metadata.json",
+      "tableSchema": {
+        "@type": "Schema",
+        "aboutUrl": "http://mff.cuni.cz/NPRG036-T2G4/language/{+alternateName}",
+        "columns": [
+          {
+            "@type": "Column",
+            "name": "alternateName",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/alternateName",
+            "lang": "en"
+          },
+          {
+            "@type": "Column",
+            "name": "name",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/name",
+            "lang": "en"
+          },
+          {
+            "@type": "Column",
+            "name": "description",
+            "required": true,
+            "datatype": "string",
+            "propertyUrl": "http://schema.org/description",
+            "lang": "en"
+          },
+          {
+            "@type": "Column",
+            "virtual": true,
+            "datatype": "string",
+            "propertyUrl": "rdf:type",
+            "valueUrl": "http://schema.org/Language"
+          }
+        ],
+        "primaryKey": "alternateName"
+      }
+    }
+  ]
+}

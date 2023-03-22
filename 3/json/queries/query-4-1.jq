@@ -1,0 +1,1 @@
+jq '[ ."@graph"[] | { name: ((.givenName | join(" ")) + " " + .familyName), speaks: [ .knowsLanguage."@id" ] } ] | group_by(.speaks) | [ .[] | { languages: .[0].speaks, authors: [ .[] | .name ] }]'

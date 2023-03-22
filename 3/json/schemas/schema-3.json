@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@graph": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "description": "Represents natural languages such as Czech, English, Hindi, etc.",
+          "properties": {
+            "name": {
+              "type": "object",
+              "description": "Name of the language.",
+              "properties": {
+                "cs": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                },
+                "sk": {
+                  "type": "string"
+                }
+              }
+            },
+            "alternateName": {
+              "description": "IETF BCP 47 language tag identifying the language.",
+              "type": "string"
+            },
+            "description": {
+              "description": "Description of the language.",
+              "type": "string"
+            }
+          },
+          "required": ["name", "alternateName", "description"]
+        }
+      ]
+    }
+  }
+}

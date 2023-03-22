@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<libraries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/schema-1.xsd">
+    <library xml:lang="cs" id="pardubice-1">
+        <name>Krajská knihovna v Pardubicích</name>
+        <url>https://kkpce.cz</url>
+        <emailAdress>dotazy@kkpce.cz</emailAdress>
+
+        <makesOffer id="ks944rur">
+            <sku>KS944RUR</sku>
+            <availabilityStarts>2022-09-13</availabilityStarts>
+            <availabilityEnds>2032-09-13</availabilityEnds>
+            <availability>InStock</availability>
+            <itemOffered id="9780345339706">
+                <ISBN>9780345339706</ISBN>
+                <name>The Fellowship of the Ring (The Lord of the Rings, Part 1)</name>
+                <keywords>middle-earth</keywords>
+                <keywords>quest</keywords>
+                <author xml:lang="en" id="0a206b9f-ac39-4136-8171-1e8b06e3b3f5">
+                    <familyName>Tolkien</familyName>
+                    <givenName>John</givenName>
+                    <givenName>Ronald</givenName>
+                    <givenName>Reuel</givenName>
+                    <birthDate>1892-01-03</birthDate>
+                    <language xml:lang="en" id="en">
+                        <name>English</name>
+                        <description>English is a West Germanic language of the Indo-European language family.</description>
+                        <tag>en</tag>
+                    </language>
+                </author>
+                <language xml:lang="en" id="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+                <inGenre xml:lang="en" id="fantasy">
+                    <name>Fantasy</name>
+                    <description>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore.</description>
+                </inGenre>
+            </itemOffered>
+        </makesOffer>
+
+        <makesOffer id="ks945rur">
+            <sku>KS945RUR</sku>
+            <availabilityStarts>2020-05-01</availabilityStarts>
+            <availabilityEnds>2030-09-01</availabilityEnds>
+            <availability>InStock</availability>
+            <itemOffered id="9780345339706">
+                <ISBN>9780345339706</ISBN>
+                <name>The Fellowship of the Ring (The Lord of the Rings, Part 1)</name>
+                <keywords>middle-earth</keywords>
+                <keywords>quest</keywords>
+                <author xml:lang="en" id="0a206b9f-ac39-4136-8171-1e8b06e3b3f5">
+                    <familyName>Tolkien</familyName>
+                    <givenName>John</givenName>
+                    <givenName>Ronald</givenName>
+                    <givenName>Reuel</givenName>
+                    <birthDate>1892-01-03</birthDate>
+                    <language xml:lang="en" id="en">
+                        <name>English</name>
+                        <description>English is a West Germanic language of the Indo-European language family.</description>
+                        <tag>en</tag>
+                    </language>
+                </author>
+                <language xml:lang="en" id="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+                <inGenre xml:lang="en" id="literary-genre/fantasy">
+                    <name>Fantasy</name>
+                    <description>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore.</description>
+                </inGenre>
+            </itemOffered>
+        </makesOffer>
+
+    </library>
+
+    <library xml:lang="cs" id="hradec-kralove-1">
+        <name>Knihovna města Hradce Králové</name>
+        <url>https://www.knihovnahk.cz</url>
+        <emailAdress>knihovna@knihovnahk.cz</emailAdress>
+
+        <makesOffer id="ks94hrdc">
+            <sku>KS94HRDC</sku>
+            <availabilityStarts>2015-05-01</availabilityStarts>
+            <availabilityEnds>2025-09-01</availabilityEnds>
+            <availability>InStock</availability>
+            <itemOffered id="9780345339706">
+                <ISBN>9780345339706</ISBN>
+                <name>The Fellowship of the Ring (The Lord of the Rings, Part 1)</name>
+                <keywords>middle-earth</keywords>
+                <keywords>quest</keywords>
+                <author xml:lang="en" id="0a206b9f-ac39-4136-8171-1e8b06e3b3f5">
+                    <familyName>Tolkien</familyName>
+                    <givenName>John</givenName>
+                    <givenName>Ronald</givenName>
+                    <givenName>Reuel</givenName>
+                    <birthDate>1892-01-03</birthDate>
+                    <language xml:lang="en" id="en">
+                        <name>English</name>
+                        <description>English is a West Germanic language of the Indo-European language family.</description>
+                        <tag>en</tag>
+                    </language>
+                </author>
+                <language xml:lang="en" id="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+                <inGenre xml:lang="en" id="fantasy">
+                    <name>Fantasy</name>
+                    <description>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore.</description>
+                </inGenre>
+            </itemOffered>
+        </makesOffer>
+    </library>
+
+    <library xml:lang="cs" id="brno-1">
+        <name>Moravská zemská knihovna v Brně</name>
+        <url>https://www.mzk.cz/</url>
+        <emailAdress>mzk@mzk.cz</emailAdress>
+    </library>
+</libraries>

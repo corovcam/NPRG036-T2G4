@@ -1,0 +1,1 @@
+jq '[ ."@graph"[] | select(.makesOffer != []) | { library: .name, numberOfOffers: .makesOffer | length } ]'

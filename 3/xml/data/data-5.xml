@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<genres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/schema-5.xsd">
+    <genre xml:lang="en" id="fantasy">
+        <name>Fantasy</name>
+        <description>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore.</description>
+        
+        <book xml:lang="en">
+            <ISBN>9780345339706</ISBN>
+            <name>The Fellowship of the Ring (The Lord of the Rings, Part 1)</name>
+            <keywords>middle-earth</keywords>
+            <keywords>quest</keywords>
+            <author xml:lang="en">
+                <familyName>Tolkien</familyName>
+                <givenName>John</givenName>
+                <givenName>Ronald</givenName>
+                <givenName>Reuel</givenName>
+                <birthDate>1892-01-03</birthDate>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+            <itemOffered>
+                <sku>KS944RUR</sku>
+                <availabilityStarts>2022-09-13</availabilityStarts>
+                <availabilityEnds>2032-09-13</availabilityEnds>
+                <availability>InStock</availability>
+                <makesOffer xml:lang="cs">
+                    <name>Krajská knihovna v Pardubicích</name>
+                    <url>https://kkpce.cz</url>
+                    <emailAdress>dotazy@kkpce.cz</emailAdress>
+                </makesOffer>
+            </itemOffered>
+            <itemOffered>
+                <sku>KS945RUR</sku>
+                <availabilityStarts>2020-05-01</availabilityStarts>
+                <availabilityEnds>2030-09-01</availabilityEnds>
+                <availability>InStock</availability>
+                <makesOffer xml:lang="cs">
+                    <name>Krajská knihovna v Pardubicích</name>
+                    <url>https://kkpce.cz</url>
+                    <emailAdress>dotazy@kkpce.cz</emailAdress>
+                </makesOffer>
+            </itemOffered>
+            <itemOffered>
+                <sku>KS94HRDC</sku>
+                <availabilityStarts>2015-05-01</availabilityStarts>
+                <availabilityEnds>2025-09-01</availabilityEnds>
+                <availability>InStock</availability>
+                <makesOffer xml:lang="cs">
+                    <name>Knihovna města Hradce Králové</name>
+                    <url>https://www.knihovnahk.cz</url>
+                    <emailAdress>knihovna@knihovnahk.cz</emailAdress>
+                </makesOffer>
+            </itemOffered>
+        </book>
+
+        <book xml:lang="cs">
+            <ISBN>9788072038299</ISBN>
+            <name>Společenstvo prstenu</name>
+            <keywords>middle-earth</keywords>
+            <keywords>quest</keywords>
+            <book>
+                <ISBN>9780345339706</ISBN>
+                <name>The Fellowship of the Ring (The Lord of the Rings, Part 1)</name>
+                <keywords>middle-earth</keywords>
+                <keywords>quest</keywords>
+                <author xml:lang="en">
+                    <familyName>Tolkien</familyName>
+                    <givenName>John</givenName>
+                    <givenName>Ronald</givenName>
+                    <givenName>Reuel</givenName>
+                    <birthDate>1892-01-03</birthDate>
+                    <language xml:lang="en">
+                        <name>English</name>
+                        <description>English is a West Germanic language of the Indo-European language family.</description>
+                        <tag>en</tag>
+                    </language>
+                </author>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </book>
+            <author xml:lang="en">
+                <familyName>Tolkien</familyName>
+                <givenName>John</givenName>
+                <givenName>Ronald</givenName>
+                <givenName>Reuel</givenName>
+                <birthDate>1892-01-03</birthDate>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en">
+                <name>Czech</name>
+                <description>Spoken by over 10 million people, it serves as the official language of the Czech Republic.</description>
+                <tag>cs</tag>
+            </language>
+        </book>
+    </genre>
+
+    <genre xml:lang="en" id="nonfiction">
+        <name>Nonfiction</name>
+        <description>Nonfiction is any document or media content that attempts to provide accurate information regarding a real-world topic. It is written to communicate facts or opinions about reality.</description>
+        
+        <book xml:lang="en">
+            <ISBN>9781785042409</ISBN>
+            <name>How to Win Friends and Influence People</name>
+            <keywords>communication</keywords>
+            <keywords>speaking</keywords>
+            <author xml:lang="en">
+                <familyName>Carnegie</familyName>
+                <givenName>Dale</givenName>
+                <givenName>Brackenridge</givenName>
+                <birthDate>1888-11-24</birthDate>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </book>
+
+        <book xml:lang="cs">
+            <ISBN>9788073065195</ISBN>
+            <name>Jak získávat přátele a působit na lidi</name>
+            <keywords>communication</keywords>
+            <keywords>speaking</keywords>
+            <book xml:lang="en">
+                <ISBN>9781785042409</ISBN>
+                <name>How to Win Friends and Influence People</name>
+                <keywords>communication</keywords>
+                <keywords>speaking</keywords>
+                <author xml:lang="en">
+                    <familyName>Carnegie</familyName>
+                    <givenName>Dale</givenName>
+                    <givenName>Brackenridge</givenName>
+                    <birthDate>1888-11-24</birthDate>
+                    <language xml:lang="en">
+                        <name>English</name>
+                        <description>English is a West Germanic language of the Indo-European language family.</description>
+                        <tag>en</tag>
+                    </language>
+                </author>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </book>
+            <author xml:lang="en">
+                <familyName>Carnegie</familyName>
+                <givenName>Dale</givenName>
+                <givenName>Brackenridge</givenName>
+                <birthDate>1888-11-24</birthDate>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en">
+                <name>Czech</name>
+                <description>Spoken by over 10 million people, it serves as the official language of the Czech Republic.</description>
+                <tag>cs</tag>
+            </language>
+        </book>
+    </genre>
+
+    <genre xml:lang="en" id="sci-fi">
+        <name>Sci-Fi</name>
+        <description>Science fiction (sci-fi) is a form of fiction that deals principally with the impact of actual or imagined science upon society or individuals.</description>
+        
+        <book xml:lang="en">
+            <ISBN>9780099518471</ISBN>
+            <name>Brave New World</name>
+            <keywords>society</keywords>
+            <keywords>future</keywords>
+            <keywords>dystopia</keywords>
+            <author xml:lang="en">
+                <familyName>Huxley</familyName>
+                <givenName>Aldous</givenName>
+                <givenName>Leonard</givenName>
+                <birthDate>1894-07-26</birthDate>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </book>
+
+        <book xml:lang="sk">
+            <ISBN>9788080618643</ISBN>
+            <name>Prekrásny nový svet</name>
+            <keywords>society</keywords>
+            <keywords>future</keywords>
+            <keywords>dystopia</keywords>
+            <book xml:lang="en">
+                <ISBN>9780099518471</ISBN>
+                <name>Brave New World</name>
+                <keywords>society</keywords>
+                <keywords>future</keywords>
+                <keywords>dystopia</keywords>
+                <author xml:lang="en">
+                    <familyName>Huxley</familyName>
+                    <givenName>Aldous</givenName>
+                    <givenName>Leonard</givenName>
+                    <birthDate>1894-07-26</birthDate>
+                    <language xml:lang="en">
+                        <name>English</name>
+                        <description>English is a West Germanic language of the Indo-European language family.</description>
+                        <tag>en</tag>
+                    </language>
+                </author>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </book>
+            <author xml:lang="en">
+                <familyName>Huxley</familyName>
+                <givenName>Aldous</givenName>
+                <givenName>Leonard</givenName>
+                <birthDate>1894-07-26</birthDate>
+                <language xml:lang="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en">
+                <name>Slovak</name>
+                <description>Slovak is the language spoken in Slovakia. It is a language from Slavic language family.</description>
+                <tag>sk</tag>
+            </language>
+        </book>
+    </genre>
+    
+</genres>

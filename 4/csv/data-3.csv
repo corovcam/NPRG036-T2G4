@@ -1,0 +1,4 @@
+id,library,isbn,availabilityStarts,availabilityEnds,availability,sku
+ks944rur,pardubice-1,9780345339706,2015-05-01,2025-09-01,InStock,KS944RUR
+ks945rur,pardubice-1,9780345339706,2020-05-01,2030-09-01,InStock,KS945RUR
+s94hrdc,hradec-kralove-1,9780345339706,2015-05-01,2025-09-01,InStock,KS94HRDC

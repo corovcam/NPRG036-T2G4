@@ -1,0 +1,118 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> a schema:Book ;
+    
+    schema:isbn "9780345339706"@en ;
+    
+    schema:name "The Fellowship of the Ring (The Lord of the Rings, Part 1)"@en ;
+    
+    schema:keywords "middle-earth"@en ;
+    
+    schema:keywords "quest"@en ;
+    
+    schema:author <http://mff.cuni.cz/NPRG036-T2G4/author/0a206b9f-ac39-4136-8171-1e8b06e3b3f5> ;
+    
+    schema:inLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+    
+    schema:genre <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/fantasy> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/book/9781785042409> a schema:Book ;
+    
+    schema:isbn "9781785042409"@en ;
+    
+    schema:name "How to Win Friends and Influence People"@en ;
+    
+    schema:keywords "communication"@en ;
+    
+    schema:keywords "speaking"@en ;
+    
+    schema:author <http://mff.cuni.cz/NPRG036-T2G4/author/5i824hb6-5839-4563-8271-1e86zwe3b3f6> ;
+    
+    schema:inLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+    
+    schema:genre <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/nonfiction> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/book/9780099518471> a schema:Book ;
+    
+    schema:isbn "9780099518471"@en ;
+    
+    schema:name "Brave New World"@en ;
+    
+    schema:keywords "society"@en ;
+    
+    schema:keywords "future"@en ;
+    
+    schema:keywords "dystopia"@en ;
+    
+    schema:author <http://mff.cuni.cz/NPRG036-T2G4/author/06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7> ;
+    
+    schema:inLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+    
+    schema:genre <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/sci-fi> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/book/9788072038299> a schema:Book ;
+    
+    schema:isbn "9788072038299"@en ;
+    
+    schema:name "Společenstvo prstenu"@cs ;
+    
+    schema:name "The Fellowship of the Ring (The Lord of the Rings, Part 1)"@en ;
+    
+    schema:keywords "middle-earth"@en ;
+    
+    schema:keywords "quest"@en ;
+    
+    schema:author <http://mff.cuni.cz/NPRG036-T2G4/author/0a206b9f-ac39-4136-8171-1e8b06e3b3f5> ;
+    
+    schema:inLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/cs> ;
+    
+    schema:translationOfWork <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> ;
+    
+    schema:genre <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/fantasy> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/book/9788073065195> a schema:Book ;
+    
+    schema:isbn "9788073065195"@en ;
+    
+    schema:name "Jak získávat přátele a působit na lidi"@cs ;
+    
+    schema:name "How to Win Friends and Influence People"@en ;
+    
+    schema:keywords "communication"@en ;
+    
+    schema:keywords "speaking"@en ;
+    
+    schema:author <http://mff.cuni.cz/NPRG036-T2G4/author/5i824hb6-5839-4563-8271-1e86zwe3b3f6> ;
+    
+    schema:inLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/cs> ;
+    
+    schema:translationOfWork <http://mff.cuni.cz/NPRG036-T2G4/book/9781785042409> ;
+    
+    schema:genre <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/nonfiction> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/book/9788080618643> a schema:Book ;
+    
+    schema:isbn "9788080618643"@en ;
+    
+    schema:name "Prekrásny nový svet"@sk ;
+    
+    schema:name "Brave New World"@en ;
+    
+    schema:keywords "society"@en ;
+    
+    schema:keywords "future"@en ;
+    
+    schema:keywords "dystopia"@en ;
+    
+    schema:author <http://mff.cuni.cz/NPRG036-T2G4/author/06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7> ;
+    
+    schema:inLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/sk> ;
+    
+    schema:translationOfWork <http://mff.cuni.cz/NPRG036-T2G4/book/9780099518471> ;
+    
+    schema:genre <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/sci-fi> .
+    

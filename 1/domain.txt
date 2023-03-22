@@ -1,0 +1,192 @@
+# NPRG036-T2G4 Specification
+
+## Overview
+
+A library has a catalog of book copies available for lease. 
+Each book copy is identified in the library system by its SKU identifier and is available in the library system for a specific amount of time. 
+If the lease availability expires, a book copy is discontinued or offered under a different SKU with a new expiration date. 
+Library users can search each offered book copy by the book information, such as ISBN, author name, or genre and language categories.
+
+## Specification
+
+- **Book**
+
+  This class represents written text that can be published in printed or electronic form.
+
+  - Attributes:
+
+    - isbn
+      - type: string
+      - description: International Standard Book Number. Numeric commercial book identifier that is intended to be unique.
+      - example: 978-0044403371
+
+    - name:
+      - type: string
+      - description: Name for the book which is usually chosen by the author.
+      - example: The Hobbit
+
+    - keywords:
+      - type: string
+      - description: keywords accurately portray book's content and reflect the words customers will use when they search.
+      - example: middle-earth
+
+  - Associations:
+
+    - translation of
+      - type: Book
+      - description: The book that this book has been translated from.
+    
+    - in genre
+      - type: Genre
+      - description: Genre of book. Book can have multiple genres.
+    
+    - in language
+      - type: Language
+      - description: The language of the book. Book can have only one language, bilingual books not considered.
+    
+    - author
+      - type: Person
+      - description: The author of the book.
+
+- **Person**
+
+  This class represents alive or dead person.
+
+  - Attributes:
+
+    - family name
+      - type: string
+      - description: Indicates one's family, tribe or community.
+      - example: Tolkien
+
+    - given name
+      - type: string
+      - description: Part of personal name which differentiates the person from other member of family or group.
+      - example: John
+
+    - birth date
+      - type: date
+      - description: Person's date of birth in Gregorian calendar.
+      - example: 1982-01-03
+
+    - e-mail
+      - type: string
+      - description: Email address.
+      - example: email@example.org
+
+  - Associations:
+
+    - knowns language
+      - type: Language
+      - description: Language person can use. Skill levels or form not distinguished.
+
+- **Language**
+
+  Represents natural languages such as Czech, English, Hindi, etc.
+
+  - Attributes:
+
+    - name
+      - type: string
+      - description: Name of the language.
+      - example: english
+
+    - description
+      - type: string
+      - description: Description of the language.
+      - example: West Germanic language
+
+    - tag
+      - type: string
+      - description: IETF BCP 47 language tag identifying the language.
+      - example: en-US
+
+- **Genre**
+
+  Represents writing genres as categories that distinguish literature based on set of stylistic criteria.
+
+  - Attributes:
+
+    - name
+      - type: string
+      - description: Name of the genre
+      - example: fantasy
+
+    - description
+      - type: string
+      - description: Description of the genre.
+      - example: Fiction involving magical elements, typically inspired by mythology and folklore.
+
+- **Lease Offer**
+
+  Represents single instance of specific book lease made in a library system.
+
+  - Attributes:
+    
+    - sku:
+      - type: string
+      - description: Stock Keeping Unit identifier unique in a library system.
+      - example: PO-TS-32-BLU
+
+    - available from:
+      - type: date
+      - description: Start date when this lease offer is available in library system.
+      - example: 2012-09-24
+
+    - available until:
+      - type: date
+      - description: Date when book copy is no longer available for lease. Book copy might be discontinued or have its lease renewed.
+      - example: 2032-11-24
+
+  - Associations:
+
+    - item offered:
+      - type: Book
+      - description: Book that is offered by this lease.
+
+    - available
+      - type: Availability
+      - description: Current state of the lease availability.
+
+- **Availability**
+
+  Represents state of offered lease, whether it is available (or not) or book is offered only in a library.
+
+  - Attributes:
+
+    - name
+      - type: string
+      - description: Name of the state
+      - example: Out of stock
+
+    - description
+      - type: string
+      - description: Textual description of the state.
+      - example: Item is currently not available.
+
+- **Library**
+
+  Represents collection of books available to an organization or public for use.
+
+  - Attributes:
+
+    - name:
+      - type: string
+      - description: The official name of the library.
+      - example: Krajská knihovna v Pardubicích
+
+    - url:
+      - type: string
+      - description: The URL of the library.
+      - example: https://kkpce.cz
+
+    - e-mail
+      - type: string
+      - description: The e-mail of the library.
+      - example: dotazy@kkpce.cz
+
+  - Associations:
+
+    - makes offer:
+      - type: Lease Offer
+      - description: Library offers a book copy lease.

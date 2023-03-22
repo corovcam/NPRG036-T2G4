@@ -1,0 +1,2 @@
+(: English Fantasy books :)
+//book[inGenre/name = "Fantasy" and language/name = "English"]

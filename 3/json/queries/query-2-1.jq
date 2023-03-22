@@ -1,0 +1,1 @@
+jq '[ ."@graph"[] | { name: .name.en, genre: .genre."@id" } ] | group_by(.genre) | [ .[] | { genre: .[0].genre, books: [ .[].name ] | unique } ]'

@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@graph": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "This class represents written text that can be published in printed or electronic form.",
+        "properties": {
+          "isbn": {
+            "type": "string",
+            "description": "International Standard Book Number. Numeric commercial book identifier that is intended to be unique."
+          },
+          "name": {
+            "type": "object",
+            "description": "Name for the book which is usually chosen by the author.",
+            "properties": {
+              "cs": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              },
+              "sk": {
+                "type": "string"
+              }
+            }
+          },
+          "keywords": {
+            "type": "array",
+            "description": "keywords accurately portray book's content and reflect the words customers will use when they search.",
+            "uniqueItems": true,
+            "items": [
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "inLanguage": {
+            "type": "object",
+            "description": "Represents natural languages such as Czech, English, Hindi, etc.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "description": "id of entity which can exist independently on this parent entity"
+              }
+            },
+            "required": ["@id"]
+          },
+          "genre": {
+            "type": "object",
+            "description": "Represents writing genres as categories that distinguish literature based on set of stylistic criteria.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "description": "id of entity which can exist independently on this parent entity"
+              }
+            },
+            "required": ["@id"]
+          },
+          "author": {
+            "type": "object",
+            "description": "This class represents alive or dead person.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "description": "id of entity which can exist independently on this parent entity"
+              }
+            },
+            "required": ["@id"]
+          },
+          "translationOfWork": {
+            "$ref": "#/properties/@graph/items"
+          }
+        },
+        "required": [
+          "isbn",
+          "name",
+          "keywords",
+          "inLanguage",
+          "genre",
+          "author"
+        ]
+      }
+    }
+  }
+}

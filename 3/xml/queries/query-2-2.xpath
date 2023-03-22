@@ -1,0 +1,6 @@
+(: Shows all Offers, the Books offered and their Authors starting from year 2020 forward. Using fn:string-join from xmlns:fn="http://www.w3.org/2005/xpath-functions" :)
+
+for $offer in //itemOffered[xs:date(availabilityStarts) > xs:date("2020-01-01")] 
+return concat($offer, " [", $offer/../name/text(), 
+" by ", fn:string-join($offer/../author/givenName/text(), " "), 
+" ", $offer/../author/familyName/text(), "]")

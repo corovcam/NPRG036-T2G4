@@ -1,0 +1,20 @@
+@prefix : <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://mff.cuni.cz/NPRG036-T2G4/literary-genre/fantasy>
+        a             dbpedia:LiteraryGenre ;
+        rdfs:comment  "Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore."@en ;
+        rdfs:label    "Fantasy"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/literary-genre/nonfiction>
+        a             dbpedia:LiteraryGenre ;
+        rdfs:comment  "Nonfiction is any document or media content that attempts to provide accurate information regarding a real-world topic. It is written to communicate facts or opinions about reality."@en ;
+        rdfs:label    "Nonfiction"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/literary-genre/sci-fi>
+        a             dbpedia:LiteraryGenre ;
+        rdfs:comment  "Science fiction (sci-fi) is a form of fiction that deals principally with the impact of actual or imagined science upon society or individuals."@en ;
+        rdfs:label    "Sci-Fi"@en .

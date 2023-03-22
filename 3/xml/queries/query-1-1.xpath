@@ -1,0 +1,7 @@
+(: Shows the count of all English, Czech and Slovak books offered in each Library independently :)
+
+for $lib in //library
+return concat($lib/name, 
+": [English: ", $lib/count(makesOffer/itemOffered/language[name = "English"]), 
+", Czech: ", $lib/count(makesOffer/itemOffered/language[name = "Czech"]), 
+", Slovak: ", $lib/count(makesOffer/itemOffered/language[name = "Slovak"]), "]")

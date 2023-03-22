@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/author/0a206b9f-ac39-4136-8171-1e8b06e3b3f5> a schema:Person ;
+    
+    schema:familyName "Tolkien"@en ;
+    
+    schema:givenName "John"@en ;
+    
+    schema:givenName "Ronald"@en ;
+    
+    schema:givenName "Reuel"@en ;
+    
+    schema:birthDate "1892-01-03"^^xsd:date ;
+    
+    schema:knowsLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/en> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/author/5i824hb6-5839-4563-8271-1e86zwe3b3f6> a schema:Person ;
+    
+    schema:familyName "Carnegie"@en ;
+    
+    schema:givenName "Dale"@en ;
+    
+    schema:givenName "Brackenridge"@en ;
+    
+    schema:birthDate "1888-11-24"^^xsd:date ;
+    
+    schema:knowsLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/en> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/author/06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7> a schema:Person ;
+    
+    schema:familyName "Huxley"@en ;
+    
+    schema:givenName "Aldous"@en ;
+    
+    schema:givenName "Leonard"@en ;
+    
+    schema:birthDate "1894-07-26"^^xsd:date ;
+    
+    schema:knowsLanguage <http://mff.cuni.cz/NPRG036-T2G4/language/en> .
+    

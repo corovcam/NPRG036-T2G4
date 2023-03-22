@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@graph": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "description": "Represents collection of books available to an organization or public for use.",
+          "properties": {
+            "name": {
+              "type": "object",
+              "description": "The official name of the library.",
+              "properties": {
+                "cs": {
+                  "type": "string"
+                },
+                "en": {
+                  "type": "string"
+                },
+                "sk": {
+                  "type": "string"
+                }
+              }
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "The URL of the library."
+            },
+            "email": {
+              "type": "object",
+              "description": "The e-mail of the library."
+            },
+            "makesOffer": {
+              "type": "array",
+              "description": "Library offers a book copy lease.",
+              "items": [
+                {
+                  "type": "object",
+                  "description": "Represents single instance of specific book lease made in a library system.",
+                  "properties": {
+                    "sku": {
+                      "type": "string",
+                      "description": "Stock Keeping Unit identifier unique in a library system."
+                    },
+                    "availabilityStarts": {
+                      "type": "string",
+                      "description": "Start date when this lease offer is available in library system.",
+                      "format": "date"
+                    },
+                    "availabilityEnds": {
+                      "type": "string",
+                      "description": "Date when book copy is no longer available for lease. Book copy might be discontinued or have its lease renewed.",
+                      "format": "date"
+                    },
+                    "availability": {
+                      "type": "object",
+                      "description": "Represents state of offered lease, whether it is available (or not) or book is offered only in a library."
+                    },
+                    "itemOffered": {
+                      "type": "object",
+                      "description": "This class represents written text that can be published in printed or electronic form.",
+                      "properties": {
+                        "@id": {
+                          "type": "string",
+                          "description": "id of entity which can exist independently on this parent entity"
+                        }
+                      },
+                      "required": ["@id"]
+                    }
+                  },
+                  "required": [
+                    "sku",
+                    "availabilityStarts",
+                    "availabilityEnds",
+                    "availability",
+                    "itemOffered"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["name", "url", "email", "makesOffer"]
+        }
+      ]
+    }
+  },
+  "required": ["@graph"]
+}

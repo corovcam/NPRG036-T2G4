@@ -1,0 +1,4 @@
+(: Shows first and last Offers submitted for each Library based on set hierarchy - only if a Library has at least 2 Offers :)
+
+for $lib in //library
+return if (count($lib/makesOffer) > 1) then concat($lib/name/text(), ": ", $lib/makesOffer[1]/sku/text(), ", ", $lib/makesOffer[last()]/sku/text()) else ""

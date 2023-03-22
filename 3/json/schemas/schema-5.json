@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@graph": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "description": "Represents writing genres as categories that distinguish literature based on set of stylistic criteria.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the genre"
+            },
+            "description": {
+              "type": "string",
+              "description": "Description of the genre."
+            }
+          },
+          "required": ["name", "description"]
+        }
+      ]
+    }
+  }
+}

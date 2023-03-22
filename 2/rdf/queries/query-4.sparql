@@ -1,0 +1,23 @@
+BASE <http://mff.cuni.cz/NPRG036-T2G4/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/> 
+PREFIX dbpedia: <http://dbpedia.org/ontology/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+# For each author count number of lease offers of their books, including translations (also transitively)
+# Counts all only offers once - does not add translations as unique books.
+
+SELECT ?author COUNT(?offer)
+WHERE {
+	?book schema:author ?author .
+	{ ?offer schema:itemOffered ?book . }
+	UNION
+	{ 
+		?translation schema:translationOfWork+ ?book .
+		?offer schema:itemOffered ?translation .
+	}
+  FILTER NOT EXISTS { ?book schema:translationOfWork ?source } 
+}
+GROUP BY ?author
+LIMIT 100

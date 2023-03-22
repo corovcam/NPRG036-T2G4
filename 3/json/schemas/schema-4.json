@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@graph": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "description": "This class represents alive or dead person.",
+          "properties": {
+            "familyName": {
+              "type": "string",
+              "description": "Indicates one's family, tribe or community."
+            },
+            "givenName": {
+              "type": "array",
+              "description": "Part of personal name which differentiates the person from other member of family or group.",
+              "uniqueItems": true,
+              "minItems": 1,
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "birthDate": {
+              "type": "string",
+              "description": "Person's date of birth in Gregorian calendar.",
+              "format": "date"
+            },
+            "knowsLanguage": {
+              "type": "object",
+              "description": "Language person can use. Skill levels or form not distinguished.",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "description": "id of entity which can exist independently on this parent entity"
+                }
+              },
+              "required": ["@id"]
+            }
+          },
+          "required": ["familyName", "givenName", "birthDate", "knowsLanguage"]
+        }
+      ]
+    }
+  }
+}

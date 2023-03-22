@@ -1,0 +1,167 @@
+<http://mff.cuni.cz/NPRG036-T2G4/library/pardubice-1>
+        a                               <http://schema.org/Library> ;
+        <http://schema.org/name>        "Krajská knihovna v Pardubicích"@en ;
+        <http://schema.org/url>         "https://kkpce.cz"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://schema.org/email>       <mailto:dotazy@kkpce.cz> ;
+        <http://schema.org/makesOffer>  <http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks944rur> ;
+        <http://schema.org/makesOffer>  <http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks945rur> .
+
+<http://mff.cuni.cz/NPRG036-T2G4/library/hradec-kralove-1>
+        a                               <http://schema.org/Library> ;
+        <http://schema.org/name>        "Knihovna města Hradce Králové"@en ;
+        <http://schema.org/url>         "https://www.knihovnahk.cz"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://schema.org/email>       <mailto:knihovna@knihovnahk.cz> ;
+        <http://schema.org/makesOffer>  <http://mff.cuni.cz/NPRG036-T2G4/lease-offer/s94hrdc> .
+
+<http://mff.cuni.cz/NPRG036-T2G4/library/brno-1>
+        a                          <http://schema.org/Library> ;
+        <http://schema.org/name>   "Moravská zemská knihovna v Brně"@en ;
+        <http://schema.org/url>    "https://www.mzk.cz/"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <http://schema.org/email>  <mailto:mzk@mzk.cz> .
+
+<http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706>
+        <http://schema.org/isbn>        "9780345339706"@en ;
+        <http://schema.org/name>        "The Fellowship of the Ring (The Lord of the Rings, Part 1)"@en ;
+        <http://schema.org/genre>       <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/fantasy> ;
+        <http://schema.org/inLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+        a                               <http://schema.org/Book> ;
+        <http://schema.org/author>      <http://mff.cuni.cz/NPRG036-T2G4/author/0a206b9f-ac39-4136-8171-1e8b06e3b3f5> ;
+        <http://schema.org/keywords>    "middle-earth"@en ;
+        <http://schema.org/keywords>    "quest"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/book/9781785042409>
+        <http://schema.org/isbn>        "9781785042409"@en ;
+        <http://schema.org/name>        "How to Win Friends and Influence People"@en ;
+        <http://schema.org/genre>       <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/nonfiction> ;
+        <http://schema.org/inLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+        a                               <http://schema.org/Book> ;
+        <http://schema.org/author>      <http://mff.cuni.cz/NPRG036-T2G4/author/5i824hb6-5839-4563-8271-1e86zwe3b3f6> ;
+        <http://schema.org/keywords>    "communication"@en ;
+        <http://schema.org/keywords>    "speaking"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/book/9780099518471>
+        <http://schema.org/isbn>        "9780099518471"@en ;
+        <http://schema.org/name>        "Brave New World"@en ;
+        <http://schema.org/genre>       <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/en> ;
+        <http://schema.org/inLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/sci-fi> ;
+        a                               <http://schema.org/Book> ;
+        <http://schema.org/author>      <http://mff.cuni.cz/NPRG036-T2G4/author/06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7> ;
+        <http://schema.org/keywords>    "society"@en ;
+        <http://schema.org/keywords>    "future"@en ;
+        <http://schema.org/keywords>    "dystopia"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/book/9788072038299>
+        <http://schema.org/isbn>        "9788072038299"@en ;
+        <http://schema.org/name>        "The Fellowship of the Ring (The Lord of the Rings, Part 1)"@en ;
+        <http://schema.org/genre>       <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/fantasy> ;
+        <http://schema.org/inLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/cs> ;
+        <http://schema.org/translationOfWork>  <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> ;
+        a                               <http://schema.org/Book> ;
+        <http://schema.org/author>      <http://mff.cuni.cz/NPRG036-T2G4/author/0a206b9f-ac39-4136-8171-1e8b06e3b3f5> ;
+        <http://schema.org/keywords>    "middle-earth"@en ;
+        <http://schema.org/keywords>    "quest"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/book/9788073065195>
+        <http://schema.org/isbn>        "9788073065195"@en ;
+        <http://schema.org/name>        "How to Win Friends and Influence People"@en ;
+        <http://schema.org/genre>       <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/nonfiction> ;
+        <http://schema.org/inLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/cs> ;
+        <http://schema.org/translationOfWork>  <http://mff.cuni.cz/NPRG036-T2G4/book/9781785042409> ;
+        a                               <http://schema.org/Book> ;
+        <http://schema.org/author>      <http://mff.cuni.cz/NPRG036-T2G4/author/5i824hb6-5839-4563-8271-1e86zwe3b3f6> ;
+        <http://schema.org/keywords>    "communication"@en ;
+        <http://schema.org/keywords>    "speaking"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/book/9788080618643>
+        <http://schema.org/isbn>        "9788080618643"@en ;
+        <http://schema.org/name>        "Brave New World"@en ;
+        <http://schema.org/genre>       <http://mff.cuni.cz/NPRG036-T2G4/literary-genre/sk> ;
+        <http://schema.org/inLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/sci-fi> ;
+        <http://schema.org/translationOfWork>  <http://mff.cuni.cz/NPRG036-T2G4/book/9780099518471> ;
+        a                               <http://schema.org/Book> ;
+        <http://schema.org/author>      <http://mff.cuni.cz/NPRG036-T2G4/author/06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7> ;
+        <http://schema.org/keywords>    "society"@en ;
+        <http://schema.org/keywords>    "future"@en ;
+        <http://schema.org/keywords>    "dystopia"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks944rur>
+        a                        <http://schema.org/OfferForLease> ;
+        <http://schema.org/itemOffered>  <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> ;
+        <http://schema.org/availabilityStarts>  "2015-05-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/availabilityEnds>  "2025-09-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/availability>  <http://schema.org/InStock> ;
+        <http://schema.org/sku>  "KS944RUR"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks945rur>
+        a                        <http://schema.org/OfferForLease> ;
+        <http://schema.org/itemOffered>  <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> ;
+        <http://schema.org/availabilityStarts>  "2020-05-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/availabilityEnds>  "2030-09-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/availability>  <http://schema.org/InStock> ;
+        <http://schema.org/sku>  "KS945RUR"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/lease-offer/s94hrdc>
+        a                        <http://schema.org/OfferForLease> ;
+        <http://schema.org/itemOffered>  <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> ;
+        <http://schema.org/availabilityStarts>  "2015-05-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/availabilityEnds>  "2025-09-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/availability>  <http://schema.org/InStock> ;
+        <http://schema.org/sku>  "KS94HRDC"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/author/0a206b9f-ac39-4136-8171-1e8b06e3b3f5>
+        a                               <http://schema.org/Person> ;
+        <http://schema.org/knowsLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+        <http://schema.org/familyName>  "Tolkien"@en ;
+        <http://schema.org/birthDate>   "1892-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/givenName>   "John"@en ;
+        <http://schema.org/givenName>   "Ronald"@en ;
+        <http://schema.org/givenName>   "Reuel"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/author/5i824hb6-5839-4563-8271-1e86zwe3b3f6>
+        a                               <http://schema.org/Person> ;
+        <http://schema.org/knowsLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+        <http://schema.org/familyName>  "Carnegie"@en ;
+        <http://schema.org/birthDate>   "1888-11-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/givenName>   "Dale"@en ;
+        <http://schema.org/givenName>   "Brackenridge"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/author/06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7>
+        a                               <http://schema.org/Person> ;
+        <http://schema.org/knowsLanguage>  <http://mff.cuni.cz/NPRG036-T2G4/language/en> ;
+        <http://schema.org/familyName>  "Huxley"@en ;
+        <http://schema.org/birthDate>   "1894-07-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://schema.org/givenName>   "Aldous"@en ;
+        <http://schema.org/givenName>   "Leonard"@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/literary-genre/fantasy>
+        a       <http://dbpedia.org/ontology/LiteraryGenre> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "Fantasy"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>  "Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore."@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/literary-genre/nonfiction>
+        a       <http://dbpedia.org/ontology/LiteraryGenre> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "Nonfiction"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>  "Nonfiction is any document or media content that attempts to provide accurate information regarding a real-world topic. It is written to communicate facts or opinions about reality."@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/literary-genre/sci-fi>
+        a       <http://dbpedia.org/ontology/LiteraryGenre> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "Sci-Fi"@en ;
+        <http://www.w3.org/2000/01/rdf-schema#comment>  "Science fiction (sci-fi) is a form of fiction that deals principally with the impact of actual or imagined science upon society or individuals."@en .
+
+<http://mff.cuni.cz/NPRG036-T2G4/language/en>
+        <http://schema.org/alternateName>  "en"@en ;
+        <http://schema.org/name>  "English"@en ;
+        <http://schema.org/description>  "English is a West Germanic language of the Indo-European language family."@en ;
+        a                         <http://schema.org/Language> .
+
+<http://mff.cuni.cz/NPRG036-T2G4/language/cs>
+        <http://schema.org/alternateName>  "cs"@en ;
+        <http://schema.org/name>  "Czech"@en ;
+        <http://schema.org/description>  "Spoken by over 10 million people, it serves as the official language of the Czech Republic."@en ;
+        a                         <http://schema.org/Language> .
+
+<http://mff.cuni.cz/NPRG036-T2G4/language/sk>
+        <http://schema.org/alternateName>  "sk"@en ;
+        <http://schema.org/name>  "Slovak"@en ;
+        <http://schema.org/description>  "Slovak is the language spoken in Slovakia. It is a language from Slavic language family."@en ;
+        a                         <http://schema.org/Language> .

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2009/01/xml.xsd"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="ISBN" type="xs:string"/>
+    <xs:element name="keywords" type="xs:string"/>
+    <xs:element name="familyName" type="xs:string"/>
+    <xs:element name="givenName" type="xs:string"/>
+    <xs:element name="birthDate" type="xs:date"/>
+    <xs:element name="emailAdress" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="tag" type="xs:string"/>
+    <xs:element name="url" type="xs:anyURI"/>
+    <xs:element name="availabilityStarts" type="xs:date"/>
+    <xs:element name="availabilityEnds" type="xs:date"/>
+    <xs:simpleType name="available">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="InStock"/>
+            <xs:enumeration value="OutOfStock"/>
+            <xs:enumeration value="OnlineOnly"/>
+            <xs:enumeration value="LimitedAvailability"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="sku" type="xs:string"/>
+    <xs:attribute name="id" type="xs:string"/>
+    
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="book" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ISBN"/>
+                <xs:element ref="name"/>
+                <xs:element ref="keywords" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="book" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="author" minOccurs="1" maxOccurs="unbounded"/>  
+                <xs:element ref="language"/> 
+                <xs:element ref="inGenre" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="itemOffered" minOccurs="0" maxOccurs="unbounded"/>            
+            </xs:sequence>
+            <xs:attribute ref="xml:lang"/>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="familyName"/>
+                <xs:element ref="givenName" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="birthDate"/>
+                <xs:element ref="emailAdress" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="language" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="xml:lang"/>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="language">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="description"/>
+                <xs:element ref="tag"/>
+            </xs:sequence>
+            <xs:attribute ref="xml:lang"/>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="inGenre">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="description"/>
+            </xs:sequence>
+            <xs:attribute ref="xml:lang"/>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="itemOffered">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sku"/>
+                <xs:element ref="availabilityStarts"/>
+                <xs:element ref="availabilityEnds"/>
+                <xs:element name="availability" type="available"/>
+                <xs:element ref="makesOffer"/>
+            </xs:sequence>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="makesOffer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="url"/>
+                <xs:element ref="emailAdress" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="xml:lang"/>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

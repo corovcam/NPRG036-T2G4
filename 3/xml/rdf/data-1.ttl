@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks944rur> a schema:OfferForLease ;
+    
+    schema:sku "KS944RUR"@en ;
+    
+    schema:availability schema:InStock ;
+    
+    schema:availabilityStarts "2022-09-13"^^xsd:date ;
+    
+    schema:availabilityEnds "2032-09-13"^^xsd:date ;
+    
+    schema:itemOffered <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks945rur> a schema:OfferForLease ;
+    
+    schema:sku "KS945RUR"@en ;
+    
+    schema:availability schema:InStock ;
+    
+    schema:availabilityStarts "2020-05-01"^^xsd:date ;
+    
+    schema:availabilityEnds "2030-09-01"^^xsd:date ;
+    
+    schema:itemOffered <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks94hrdc> a schema:OfferForLease ;
+    
+    schema:sku "KS94HRDC"@en ;
+    
+    schema:availability schema:InStock ;
+    
+    schema:availabilityStarts "2015-05-01"^^xsd:date ;
+    
+    schema:availabilityEnds "2025-09-01"^^xsd:date ;
+    
+    schema:itemOffered <http://mff.cuni.cz/NPRG036-T2G4/book/9780345339706> .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/library/pardubice-1> a schema:Library ;
+    
+    schema:name "Krajská knihovna v Pardubicích"@cs ;
+    
+    schema:email <mailto:dotazy@kkpce.cz> ;
+    
+    schema:makesOffer <http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks944rur> ;
+    
+    schema:makesOffer <http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks945rur> ;
+    
+    schema:url "https://kkpce.cz"^^xsd:anyURI .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/library/hradec-kralove-1> a schema:Library ;
+    
+    schema:name "Knihovna města Hradce Králové"@cs ;
+    
+    schema:email <mailto:knihovna@knihovnahk.cz> ;
+    
+    schema:makesOffer <http://mff.cuni.cz/NPRG036-T2G4/lease-offer/ks94hrdc> ;
+    
+    schema:url "https://www.knihovnahk.cz"^^xsd:anyURI .
+    
+<http://mff.cuni.cz/NPRG036-T2G4/library/brno-1> a schema:Library ;
+    
+    schema:name "Moravská zemská knihovna v Brně"@cs ;
+    
+    schema:email <mailto:mzk@mzk.cz> ;
+    
+    schema:url "https://www.mzk.cz/"^^xsd:anyURI .
+    

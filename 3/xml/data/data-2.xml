@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/schema-2.xsd">
+    <book xml:lang="en" id="9780345339706">
+        <ISBN>9780345339706</ISBN>
+        <name>The Fellowship of the Ring (The Lord of the Rings, Part 1)</name>
+        <keywords>middle-earth</keywords>
+        <keywords>quest</keywords>
+        <author xml:lang="en" id="0a206b9f-ac39-4136-8171-1e8b06e3b3f5">
+            <familyName>Tolkien</familyName>
+            <givenName>John</givenName>
+            <givenName>Ronald</givenName>
+            <givenName>Reuel</givenName>
+            <birthDate>1892-01-03</birthDate>
+            <language xml:lang="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </author>
+        <language xml:lang="en" id="en">
+            <name>English</name>
+            <description>English is a West Germanic language of the Indo-European language family.</description>
+            <tag>en</tag>
+        </language>
+        <inGenre xml:lang="en" id="fantasy">
+            <name>Fantasy</name>
+            <description>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore.</description>
+        </inGenre>
+        <itemOffered id="ks944rur">
+            <sku>KS944RUR</sku>
+            <availabilityStarts>2022-09-13</availabilityStarts>
+            <availabilityEnds>2032-09-13</availabilityEnds>
+            <availability>InStock</availability>
+            <makesOffer xml:lang="cs" id="pardubice-1">
+                <name>Krajská knihovna v Pardubicích</name>
+                <url>https://kkpce.cz</url>
+                <emailAdress>dotazy@kkpce.cz</emailAdress>
+            </makesOffer>
+        </itemOffered>
+        <itemOffered id="ks945rur">
+            <sku>KS945RUR</sku>
+            <availabilityStarts>2020-05-01</availabilityStarts>
+            <availabilityEnds>2030-09-01</availabilityEnds>
+            <availability>InStock</availability>
+            <makesOffer xml:lang="cs" id="pardubice-1">
+                <name>Krajská knihovna v Pardubicích</name>
+                <url>https://kkpce.cz</url>
+                <emailAdress>dotazy@kkpce.cz</emailAdress>
+            </makesOffer>
+        </itemOffered>
+        <itemOffered id="ks94hrdc">
+            <sku>KS94HRDC</sku>
+            <availabilityStarts>2015-05-01</availabilityStarts>
+            <availabilityEnds>2025-09-01</availabilityEnds>
+            <availability>InStock</availability>
+            <makesOffer xml:lang="cs" id="hradec-kralove-1">
+                <name>Knihovna města Hradce Králové</name>
+                <url>https://www.knihovnahk.cz</url>
+                <emailAdress>knihovna@knihovnahk.cz</emailAdress>
+            </makesOffer>
+        </itemOffered>
+    </book>
+
+    <book xml:lang="en" id="9781785042409">
+        <ISBN>9781785042409</ISBN>
+        <name>How to Win Friends and Influence People</name>
+        <keywords>communication</keywords>
+        <keywords>speaking</keywords>
+        <author xml:lang="en" id="5i824hb6-5839-4563-8271-1e86zwe3b3f6">
+            <familyName>Carnegie</familyName>
+            <givenName>Dale</givenName>
+            <givenName>Brackenridge</givenName>
+            <birthDate>1888-11-24</birthDate>
+            <language xml:lang="en" id="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </author>
+        <language xml:lang="en" id="en">
+            <name>English</name>
+            <description>English is a West Germanic language of the Indo-European language family.</description>
+            <tag>en</tag>
+        </language>
+        <inGenre xml:lang="en" id="nonfiction">
+            <name>Nonfiction</name>
+            <description>Nonfiction is any document or media content that attempts to provide accurate information regarding a real-world topic. It is written to communicate facts or opinions about reality.</description>
+        </inGenre>
+    </book>
+    
+    <book xml:lang="en" id="9780099518471">
+        <ISBN>9780099518471</ISBN>
+        <name>Brave New World</name>
+        <keywords>society</keywords>
+        <keywords>future</keywords>
+        <keywords>dystopia</keywords>
+        <author xml:lang="en" id="06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7">
+            <familyName>Huxley</familyName>
+            <givenName>Aldous</givenName>
+            <givenName>Leonard</givenName>
+            <birthDate>1894-07-26</birthDate>
+            <language xml:lang="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </author>
+        <language xml:lang="en" id="en">
+            <name>English</name>
+            <description>English is a West Germanic language of the Indo-European language family.</description>
+            <tag>en</tag>
+        </language>
+        <inGenre xml:lang="en" id="sci-fi">
+            <name>Sci-Fi</name>
+            <description>Science fiction (sci-fi) is a form of fiction that deals principally with the impact of actual or imagined science upon society or individuals.</description>
+        </inGenre>
+    </book>
+        
+    <book xml:lang="cs" id="9788072038299">
+        <ISBN>9788072038299</ISBN>
+        <name>Společenstvo prstenu</name>
+        <keywords>middle-earth</keywords>
+        <keywords>quest</keywords>
+        <book xml:lang="en" id="9780345339706">
+            <ISBN>9780345339706</ISBN>
+            <name>The Fellowship of the Ring (The Lord of the Rings, Part 1)</name>
+            <keywords>middle-earth</keywords>
+            <keywords>quest</keywords>
+            <author xml:lang="en" id="0a206b9f-ac39-4136-8171-1e8b06e3b3f5">
+                <familyName>Tolkien</familyName>
+                <givenName>John</givenName>
+                <givenName>Ronald</givenName>
+                <givenName>Reuel</givenName>
+                <birthDate>1892-01-03</birthDate>
+                <language xml:lang="en" id="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en" id="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+            <inGenre xml:lang="en" id="fantasy">
+                <name>Fantasy</name>
+                <description>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore.</description>
+            </inGenre>
+        </book>
+        <author xml:lang="en" id="0a206b9f-ac39-4136-8171-1e8b06e3b3f5">
+            <familyName>Tolkien</familyName>
+            <givenName>John</givenName>
+            <givenName>Ronald</givenName>
+            <givenName>Reuel</givenName>
+            <birthDate>1892-01-03</birthDate>
+            <language xml:lang="en" id="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </author>
+        <language xml:lang="en" id="cs">
+            <name>Czech</name>
+            <description>Spoken by over 10 million people, it serves as the official language of the Czech Republic.</description>
+            <tag>cs</tag>
+        </language>            
+        <inGenre xml:lang="en" id="fantasy">
+            <name>Fantasy</name>
+            <description>Fantasy is a genre of speculative fiction involving magical elements, typically set in a fictional universe and sometimes inspired by mythology and folklore.</description>
+        </inGenre>
+    </book>
+        
+    <book xml:lang="cs" id="9788073065195">
+        <ISBN>9788073065195</ISBN>
+        <name>Jak získávat přátele a působit na lidi</name>
+        <keywords>communication</keywords>
+        <keywords>speaking</keywords>
+        <book xml:lang="en" id="9781785042409">
+            <ISBN>9781785042409</ISBN>
+            <name>How to Win Friends and Influence People</name>
+            <keywords>communication</keywords>
+            <keywords>speaking</keywords>
+            <author xml:lang="en" id="5i824hb6-5839-4563-8271-1e86zwe3b3f6">
+                <familyName>Carnegie</familyName>
+                <givenName>Dale</givenName>
+                <givenName>Brackenridge</givenName>
+                <birthDate>1888-11-24</birthDate>
+                <language xml:lang="en" id="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en" id="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+            <inGenre xml:lang="en" id="nonfiction">
+                <name>Nonfiction</name>
+                <description>Nonfiction is any document or media content that attempts to provide accurate information regarding a real-world topic. It is written to communicate facts or opinions about reality.</description>
+            </inGenre>
+        </book>
+        <author xml:lang="en" id="5i824hb6-5839-4563-8271-1e86zwe3b3f6">
+            <familyName>Carnegie</familyName>
+            <givenName>Dale</givenName>
+            <givenName>Brackenridge</givenName>
+            <birthDate>1888-11-24</birthDate>
+            <language xml:lang="en" id="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </author>
+        <language xml:lang="en" id="cs">
+            <name>Czech</name>
+            <description>Spoken by over 10 million people, it serves as the official language of the Czech Republic.</description>
+            <tag>cs</tag>
+        </language>
+        <inGenre xml:lang="en" id="nonfiction">
+            <name>Nonfiction</name>
+            <description>Nonfiction is any document or media content that attempts to provide accurate information regarding a real-world topic. It is written to communicate facts or opinions about reality.</description>
+        </inGenre>
+    </book>
+
+    <book xml:lang="sk" id="9788080618643">
+        <ISBN>9788080618643</ISBN>
+        <name>Prekrásny nový svet</name>
+        <keywords>society</keywords>
+        <keywords>future</keywords>
+        <keywords>dystopia</keywords>
+        <book xml:lang="en" id="9780099518471">
+            <ISBN>9780099518471</ISBN>
+            <name>Brave New World</name>
+            <keywords>society</keywords>
+            <keywords>future</keywords>
+            <keywords>dystopia</keywords>
+            <author xml:lang="en" id="06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7">
+                <familyName>Huxley</familyName>
+                <givenName>Aldous</givenName>
+                <givenName>Leonard</givenName>
+                <birthDate>1894-07-26</birthDate>
+                <language xml:lang="en" id="en">
+                    <name>English</name>
+                    <description>English is a West Germanic language of the Indo-European language family.</description>
+                    <tag>en</tag>
+                </language>
+            </author>
+            <language xml:lang="en" id="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+            <inGenre xml:lang="en" id="sci-fi">
+                <name>Sci-Fi</name>
+                <description>Science fiction (sci-fi) is a form of fiction that deals principally with the impact of actual or imagined science upon society or individuals.</description>
+            </inGenre>
+        </book>
+        <author xml:lang="en" id="06daw835-98sd-4dgf-69a8-sdfe59ed3b3f7">
+            <familyName>Huxley</familyName>
+            <givenName>Aldous</givenName>
+            <givenName>Leonard</givenName>
+            <birthDate>1894-07-26</birthDate>
+            <language xml:lang="en" id="en">
+                <name>English</name>
+                <description>English is a West Germanic language of the Indo-European language family.</description>
+                <tag>en</tag>
+            </language>
+        </author>
+        <language xml:lang="en" id="sk">
+            <name>Slovak</name>
+            <description>Slovak is the language spoken in Slovakia. It is a language from Slavic language family.</description>
+            <tag>sk</tag>
+        </language>
+        <inGenre xml:lang="en" id="sci-fi">
+            <name>Sci-Fi</name>
+            <description>Science fiction (sci-fi) is a form of fiction that deals principally with the impact of actual or imagined science upon society or individuals.</description>
+        </inGenre>
+    </book>
+
+</books>
